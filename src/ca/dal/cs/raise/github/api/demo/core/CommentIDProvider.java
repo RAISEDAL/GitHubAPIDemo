@@ -111,8 +111,6 @@ public class CommentIDProvider {
 			if(this.commentAuthorMap.containsKey(reviewCommentID)){
 				System.out.println(this.commentAuthorMap.get(reviewCommentID));
 			}
-			
-			
 		} catch (Exception exc) {
 			exc.printStackTrace();
 		}
@@ -126,5 +124,4 @@ public class CommentIDProvider {
 		CommentIDProvider ciProvider = new CommentIDProvider(companyName, repoName, prNumber, commentText);
 		ciProvider.detectCommentID();
 	}
-
 }
